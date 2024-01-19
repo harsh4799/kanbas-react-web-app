@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit Assignment</title>
+</head>
+<body>
+
+<div>
+    <form>
+        <select>
+            <option>SpeedGrader</option>
+        </select>
+        <hr>
+        <label for="asn">Assignment Name</label>
+        <br>
+        <input type="text" id="asn" value="A1 - ENV + HTML"><br>
+        <br>
+        <label for="asd">Assignment Description</label>
+        <br>
+        <textarea id="asd">This is the assignment description.</textarea><br>
+        <br>
+        <label for="points">Points</label>
+        <br>
+        <input type="text" id="points" value="100"><br>
+        <br>
+        <label for="asg">Assignment Group</label>
+        <br>
+        <select id="asg">
+            <option>ASSIGNMENTS</option>
+        </select><br>
+        <br>
+        <label for="dispgrade">Display Grade as</label>
+        <br>
+        <select id="dispgrade">
+            <option>Percentage</option>
+        </select>
+        <br><br>
+        <label for="stype">Submission Type</label>
+        <br>
+        <select id="stype">
+            <option>Online</option>
+        </select><br>
+        <br>
+        <label for="onlinetype">Online Entry Options</label>
+        <br>
+        <label><input type="checkbox"> Text Entry</label><br>
+        <label><input type="checkbox"> Website URL</label><br>
+        <label><input type="checkbox"> Media Recordings</label><br>
+        <label><input type="checkbox"> Student Annotation</label><br>
+        <label><input type="checkbox"> File Uploads</label><br> 
+        <br>
+        <label for="assign">Assign</label> 
+        <br>
+        <label for="assign">Assign to</label> 
+        <br>
+        <select id="assign">
+            <option>Everyone</option>
+        </select><br> 
+        <br>
+        <label for="due">Due</label>
+        <br>
+        <input type="date" id="due" value="2021-01-01"><br>
+        <br>
+        <label for="available-from">Available from</label>
+        <br>
+        <input type="date" id="available-from" value="2021-01-01"><br> 
+        <br>
+        <label for="available-until">Until</label>
+        <br>
+        <input type="date" id="available-until" value="2021-01-01"><br> 
+        <br>
+        <div class="button-container">
+            <button type="button" onclick="window.location.href='../screen.html';">Cancel</button>
+            <button type="submit" onclick="window.location.href='../screen.html';">Save</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
