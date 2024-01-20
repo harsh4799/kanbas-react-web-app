@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Course Details</title>
+</head>
+<body>
+    <h2>Course Details</h2>
+    <form>
+        
+        <label>Image:</label>
+        <button type="button">Choose Image</button><br>
+        
+        <label for="cname">Name:</label>
+        <input type="text" id="cname" value="CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]"><br>
+
+        
+        <label for="ccode">Course Code:</label>
+        <input type="text" id="ccode" value="CS4550.12631.202410"><br>
+
+        
+        <label for="blueprint">Blueprint Course:</label>
+        <select id="blueprint">
+            <option>Yes</option>
+            <option>No</option>
+        </select><br>
+
+        
+        <label for="course-template">Course Template:</label>
+        <input type="checkbox" id="template">
+        <label for="template"> Enable course as a Course Template</label><br>
+
+        
+        <label for="tzone">Time Zone:</label>
+        <select id="tzone">
+            <option>Eastern Time (US & Canada) (-05:00/-04:00)</option>
+        </select><br>
+
+        
+        <label for="sis">SIS ID:</label>
+        <input type="text" id="sis" value="CS4550.12631.202410"><br>
+
+        
+        <label for="subacc">Subaccount:</label>
+        <input type="text" id="subacc" value="CS Graduate"><br>
+
+        <label for="term">Term:</label>
+        <input type="text" id="term" value="202410_1 Fall 2023 Semester Full Term"><br>
+
+        
+        <label for="participation">Participation:</label>
+        <select id="participation">
+            <option>Term</option>
+        </select><br>
+    
+
+        <p>Course participation is limited to term start and end dates.</p>
+
+        
+        <label for="start">Start:</label>
+        <input type="date" id="start"><br>
+
+        
+        <label for="end">End:</label>
+        <input type="date" id="end"> <br>
+
+        <label><input type="checkbox"> Restrict students from viewing course before term start date</label><br>
+        <label><input type="checkbox"> Restrict students from viewing course after term end date</label><br><br>
+
+        <label for="due">Default due time:</label>
+        <select id="due">
+            <option>Account default (11:59pm)</option>
+        </select><br><br>
+
+        <label for="language">Language:</label>
+        <select id="language">
+            <option>Not set (user-configurable, defaults to English)</option>
+        </select><br><br>
+
+        <label for="storage">File Storage:</label>
+        <input type="text" id="storage" value="10000 megabytes"><br><br>
+
+        <label><input type="checkbox"> Launch SpeedGrader Filtered by Student Group</label><br>
+        
+        <label><input type="checkbox"> Enable course grading scheme</label><br><br>
+
+        <label for="license">License:</label>
+        <select id="license">
+            <option>Private (Copyrighted)</option>
+        </select><br><br>
+
+        <label><input type="checkbox" name="copyright"> File Copyright:</label>
+        <span>Copyright and license information must be provided for files before they are published.</span><br><br>
+
+        <label for="visibility">Visibility:</label>
+        <select id="visibility">
+            <option>Course</option>
+        </select><br><br>
+
+        <label><input type="checkbox" name="pcourse"> Include this course in the public course index</label><br><br>
+
+        <label for="format">Format:</label>
+        <select id="format">
+            <option>On-Campus</option>
+        </select><br><br>
+
+        <label><input type="checkbox" name="paths"> Mastery Paths:</label>
+        <span>Enable individual learning paths for students based on assessment</span><br><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description"></textarea><br><br>
+
+        <a href="#">more options</a><br><br>
+
+        <input type="submit" value="Update Course Details">
+    </form>
+</body>
+</html>
