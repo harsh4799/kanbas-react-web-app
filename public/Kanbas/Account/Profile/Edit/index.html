@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Profile Edit</title>
+</head>
+<body>
+    <form action="screen.html">
+        <table>
+            <tr>
+                <td>Name:*</td>
+                <td><input type="text" name="firstname" value="Harshit" required> <input type="text" name="lastname" value="Pandey" required></td>
+                <td>Pronouns:</td>
+                <td>
+                    <select name="pronouns">
+                        <option value="none">None</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Title:</td>
+                <td colspan="3"><input type="text" name="title" style="width: 100%;"></td>
+            </tr>
+        </table>
+        <p>Contact</p>
+        <p>No registered services, you can add some on the <a href="settings.html">settings page</a>.</p>
+        <p>Biography</p>
+        <textarea name="biography" rows="4" style="width: 100%;">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
+        <p>Links</p>
+        <ul>
+            <li>
+                <input type="text" name="linkTitle" value="YouTube"> →
+                <input type="url" name="linkURL" value="https://www.youtube.com">
+                <button type="button">Remove</button>
+            </li>
+        </ul>
+        <button type="button" onclick="window.location.href='screen.html';">Add another link</button>
+        <br>
+        <button type="submit">Save Profile</button>
+        <button type="button" onclick="window.location.href='Profile/screen.html';">Cancel Editing</button>
+    </form>
+</body>
+</html>

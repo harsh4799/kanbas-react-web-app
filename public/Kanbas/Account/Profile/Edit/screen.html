@@ -1,0 +1,79 @@
+<!-- /public/Kanbas/Account/Profile/Edit/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Profile Edit Screen</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td valign="top"> 
+                    <ul>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Commons</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </td>
+                <td valign="top">
+                    <ul>
+                        <li><a href="#">Notifications</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">ePortfolios</a></li>
+                        <li><a href="#">Shared Content</a></li>
+                        <li><a href="#">The Hub</a></li>
+                        <li><a href="#">Qwickly Course Tools</a></li>
+                        <li><a href="#">Global Announcements</a></li>
+                    </ul>
+                </td>
+                <td valign="top">
+                    <form action="screen.html">
+                        <table>
+                            <tr>
+                                <td>Name:*</td>
+                                <td><input type="text" name="firstname" value="Harshit" required> <input type="text" name="lastname" value="Pandey" required></td>
+                                <td>Pronouns:</td>
+                                <td>
+                                    <select name="pronouns">
+                                        <option value="none">None</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Title:</td>
+                                <td colspan="3"><input type="text" name="title" style="width: 100%;"></td>
+                            </tr>
+                        </table>
+                        <p>Contact</p>
+                        <p>No registered services, you can add some on the <a href="settings.html">settings page</a>.</p>
+                        <p>Biography</p>
+                        <textarea name="biography" rows="4" style="width: 100%;">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
+                        <p>Links</p>
+                        <ul>
+                            <li>
+                                <input type="text" name="linkTitle" value="YouTube"> →
+                                <input type="url" name="linkURL" value="https://www.youtube.com">
+                                <button type="button">Remove</button>
+                            </li>
+                        </ul>
+                        <button type="button" onclick="window.location.href='screen.html';">Add another link</button>
+                        <br>
+                        <button type="submit">Save Profile</button>
+                        <button type="button" onclick="window.location.href='Profile/screen.html';">Cancel Editing</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
