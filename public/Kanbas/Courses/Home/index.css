@@ -1,0 +1,123 @@
+.course-top-navigation {
+    width: 95%;
+}
+
+.side-home-bar > div > div > a { 
+	width: 100%;
+  margin: 10px 0px;
+  padding: 0px;
+  border: 1px solid black;
+  display: inline-flex;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-home-bar > div > div >a.green { 
+	background-color: green;
+}
+
+.side-home-bar > div > div > a > i {
+    padding-right: 6px;
+}
+
+.to-do	 > ul, .coming-up > ul, .side-list > ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.side-list > ul > li{
+	border: 1px solid black;
+	margin: 2px;
+  background-color: white;
+}
+
+.coming-up > ul > li > a , .side-list > ul > li > a {
+  text-decoration: none;
+	color: black;
+}
+
+
+.side-list > ul > li > a > i {
+	padding : 2px;
+}
+
+
+@media (max-width: 1399px) {
+	.side-home-bar {
+		display: none;
+	}
+}
+
+@media (max-width: 1099px) {
+	.course-nav {
+		display: none;
+		width: 0%;
+	}
+
+	.side-home-bar {
+		width: 0%;
+	}
+
+	.home-module {
+		width: 100% !important
+	}
+
+	.wd-kanbas-navigation {
+		display: none;
+	}
+
+	.top-responsive-bar {
+		display: flex;
+		background-color: black;
+		color: white;
+		margin-bottom: 20px;
+	}
+
+	.top-div, .course-top-navigation {
+		display: none;
+	}
+}
+
+@media (min-width: 1100px) {
+	.top-responsive-bar {
+		display: none;
+	}
+
+	.left {
+		display: none;
+	}
+}
+
+.top-responsive-bar > div > a{
+	text-decoration: none;
+	color: white;
+}
+
+.left {
+	margin: 20px;
+}
+
+.left > ul {
+	list-style: none;
+}
+
+.left > ul > li {
+	margin: 5px;
+}
+
+.left > ul > li > a {
+	text-decoration: none;
+	color: red;
+}
+
+.left > ul > li > a > i{
+	margin-right: 10px;
+	size: 10px;
+}
+
+.right {
+	margin: 20px;
+}
