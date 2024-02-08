@@ -1,104 +1,309 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Toolbar</title>
-<style>
-    
-</style>
+  <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
 </head>
 <body>
+  <div class="c-top-navigation">
+    <a href="#"><i class="fa fa-bars"></i></a>
+    <a href="#">CS5610.36915.202430</a>
+    > Assignments
+    <hr />
+  </div>
 
-    <div class="toolbar">
-        <input type="search" placeholder="Search for Assignments">
-        <button >Group</button>
-        <button >Assignment</button>
-        <select>
-            <option>Edit Assignment Dates</option>
-        </select>
-    </div>
+  <table>
+    <tbody>
+      <tr>
+        <td valign="top">
+          <ul class="wd-navigation">
+            <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+            <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+            <li><a href="#">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li class="wd-active">
+              <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+            </li>
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li>
+              <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a>
+            </li>
+          </ul>
+        </td>
+        <td valign="top" width="100%">
+          <div class="top-button-bar float-end">
+            <a href="">Collapse All</a>
+            <a href="">View Progress</a>
+            <a href="">
+              <i class="fa fa-check-circle text-success"></i> Publish All<i class="fa fa-angle-down"></i>
+            </a>
+            <a class="red" href=""><i class="fa fa-plus"></i>Module</a>
+            <a href=""><i class="fa fa-ellipsis-v ms-2"></i></a>
+          </div>
+          <br />
+          <hr />
+          <ul class="list-group wd-assignments">
+            <li class="list-group-item">
+              <div>
+                <i class="fa fa-ellipsis-v"></i>
+                <i class="fa fa-caret-down"></i> Assignments
+                <span class="float-end">
+                  <a>40% of total</a>
+                  <i class="fa fa-plus"></i>
+                  <i class="fa fa-ellipsis-v ms-2"></i>
+                </span>
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span class="float-start">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><i class="fa fa-ellipsis-v ms-2 spacing"></i></td>
+                          <td><i class="fa fa-book green spacing"></i></td>
+                          <td>
+                            <table class="spacing">
+                              <tbody>
+                                <tr><td><b><h5>A1 SETUP</h5></b></td></tr>
+                                <tr><td>Week 0 - SETUP - Week Starting on Monday September 5th (9/5/22) Module |</td></tr>
+                                <tr><td><b>Due:</b> Sep 18, 2022 at 11:59 PM | 100 pts</td></tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </span>
+                  <span class="float-end">
+                    <i class="fa fa-check-circle text-success"></i>
+                    <i class="fa fa-ellipsis-v ms-2"></i>
+                  </span>
+                </li>
+                
+                <li class="list-group-item">
+                    <span class="float-start">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="fa fa-ellipsis-v ms-2 spacing"></i>
+                            </td>
+                            <td>
+                              <i class="fa fa-book green spacing"></i>
+                            </td>
+                            <td>
+                              <table class="spacing">
+                                <tbody>
+                                  <tr>
+                                    <td><b><h5>A2 HTML</h5></b></td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      Week 1 - HTML - Week Starting on Monday
+                                      September 5th (9/12/22) Module |
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <b>Due:</b> Sep 25, 2022 at 11:59 PM | 100 pts
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </span>
+                    <span class="float-end">
+                      <i class="fa fa-check-circle text-success"></i>
+                      <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                  </li>
 
-    <br><br>
+                  <li class="list-group-item">
+                    <span class="float-start">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="fa fa-ellipsis-v ms-2 spacing"></i>
+                            </td>
+                            <td>
+                              <i class="fa fa-book green spacing"></i>
+                            </td>
+                            <td>
+                              <table class="spacing">
+                                <tbody>
+                                  <tr>
+                                    <td><b><h5>A3 CSS</h5></b></td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      Week 2 - CSS - Week Starting on Monday
+                                      September 19th (9/19/22) Module |
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <b>Due:</b> Oct 2, 2022 at 11:59 PM | 100 pts
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </span>
+                    <span class="float-end">
+                      <i class="fa fa-check-circle text-success"></i>
+                      <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                  </li>
 
-    <div>
-        <div>
-            ASSIGNMENTS 40% of Total
-            <select name="edit-assignments">
-                <option>Edit</option>
-                <option>Speed Grader</option>
-                <option>Duplicate</option>
-                <option>Delete</option>
-                <option>Move To...</option>
-                <option>Send To...</option>
-                <option>Copy To...</option>
-                <option>Share to Commons</option>
-            </select>
-        </div>
-        <ul>
-            <li>A1 - ENV + HTML <br> Multiple Modules | Not available yet</li>
-            <li>A2 - CSS + BOOTSTRAP <br> Multiple Modules | Not availabe yet</li>
-            <li>A3 - IS + REACT <br> Multiple Modules | Not availabe yet</li>
-            <li>A4 - STATE + REDUX <br> Multiple Modules | Not available yet</li>
-            <li>A5 - NODE + SESSION <br> Multiple Modules | Not available yet</li>
-            <li>A6 - MONGO + MONGOOSE <br> Multiple Modules | Not available yet</li>
-        </ul>
+                  <li class="list-group-item">
+                    <span class="float-start">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="fa fa-ellipsis-v ms-2 spacing"></i>
+                            </td>
+                            <td>
+                              <i class="fa fa-book green spacing"></i>
+                            </td>
+                            <td>
+                              <table class="spacing">
+                                <tbody>
+                                  <tr>
+                                    <td><b><h5>A4 BOOTSTRAP</h5></b></td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      Week 3 - bootstrap - Week Starting on
+                                      Monday September 26th (9/26/22) Module |
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <b>Due:</b> Oct 10, 2022 at 11:59 PM | 100 pts
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </span>
+                    <span class="float-end">
+                      <i class="fa fa-check-circle text-success"></i>
+                      <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                  </li>
 
-        <div>
-            QUIZZES 10% of Total
-            <select name="edit-assignments">
-                <option>Edit</option>
-                <option>Speed Grader</option>
-                <option>Duplicate</option>
-                <option>Delete</option>
-                <option>Move To...</option>
-                <option>Send To...</option>
-                <option>Copy To...</option>
-                <option>Share to Commons</option>
-            </select>
-        </div>
-        <ul>
-            <li>O1- HIML <br>Multiple Modules I Not available yet</li>
-            <li>Q2 - CSS <br>Multiple Modules I Not available yet</li>
-            <li>Q3 - JS, ES6 <br>Multiple Modules I Not available yet</li>
-            <li>04 - NODE <br>Multiple Modules I Not available yet</li>
-            <li>Q5 - MONGO <br>Multiple Modules | Not available yet</li>
-        </ul>
+                  <li class="list-group-item">
+                    <span class="float-start">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="fa fa-ellipsis-v ms-2 spacing"></i>
+                            </td>
+                            <td>
+                              <i class="fa fa-book green spacing"></i>
+                            </td>
+                            <td>
+                              <table class="spacing">
+                                <tbody>
+                                  <tr>
+                                    <td><b><h5>A5 JAVASCRIPT</h5></b></td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      Week 4 - JavaScript - Week Starting on
+                                      Monday October 3rd (10/3/22) Module |
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <b>Due:</b> Oct 16, 2022 at 11:59 PM | 100 pts
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </span>
+                    <span class="float-end">
+                      <i class="fa fa-check-circle text-success"></i>
+                      <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                  </li>
 
-        <div>
-            EXAMS 20% of Total 
-            <select class="edit-dropdown" name="edit-assignments">
-                <option>Edit</option>
-                <option>Speed Grader</option>
-                <option>Duplicate</option>
-                <option>Delete</option>
-                <option>Move To...</option>
-                <option>Send To...</option>
-                <option>Copy To...</option>
-                <option>Share to Commons</option>
-            </select>
-        </div>
-        <ul>
-            <li>Midterm <br> Multiple Modules | Not available yet</li>
-            <li>Final <br> Multiple Modules | Not available yet</li>
-        </ul>
-
-        <div>
-            PROJECT 30% of Total
-            <select class="edit-dropdown" name="edit-assignments">
-                <option>Edit</option>
-                <option>Speed Grader</option>
-                <option>Duplicate</option>
-                <option>Delete</option>
-                <option>Move To...</option>
-                <option>Send To...</option>
-                <option>Copy To...</option>
-                <option>Share to Commons</option>
-            </select>
-        </div>
-        <ul>
-            <li>Project <br> Multiple Modules | Not available yet</li>
-        </ul>
-    </div>
+                  <li class="list-group-item">
+                    <span class="float-start">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <i class="fa fa-ellipsis-v ms-2 spacing"></i>
+                            </td>
+                            <td>
+                              <i class="fa fa-book green spacing"></i>
+                            </td>
+                            <td>
+                              <table class="spacing">
+                                <tbody>
+                                  <tr>
+                                    <td><b><h5>A6 REACT</h5></b></td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      Week 5 - React & Routing - Week Starting
+                                      on Monday October 10th (10/10/22) Module
+                                      |
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <b>Due:</b> Oct 23, 2022 at 11:59 PM | 100 pts
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </span>
+                    <span class="float-end">
+                      <i class="fa fa-check-circle text-success"></i>
+                      <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                  </li>
+                  
+              </ul>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
