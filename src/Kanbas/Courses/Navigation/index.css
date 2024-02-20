@@ -1,0 +1,31 @@
+.kanbas-account {
+    width: 200px;
+    text-align: left;
+  }
+  
+  .kanbas-account-selected {
+    border-left-style: solid;
+    border-left-width: 2px;
+    margin-left: -10px;
+    padding-left: 8px;
+  }
+  
+  .kanbas-account-border {
+    border-style: none;
+    padding-top: -25px;
+    padding-bottom: -25px;
+    margin: -2px;
+  }
+  
+  .kanbas-column {
+    float: left;
+    margin: 8px;
+  }
+
+  .kanbas-red {
+    color: #d41a2d !important;
+  }
+  
+  .kanbas-black {
+    color: black !important;
+  }
