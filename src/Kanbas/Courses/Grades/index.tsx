@@ -60,9 +60,7 @@ function Grades() {
             <table>
               <tbody>
                 <tr>
-                  <td valign="middle">
-                    <FaFilter />
-                  </td>
+
                   <td width="100%">
                     <input
                       id="studentSearch"
@@ -73,9 +71,7 @@ function Grades() {
                       onChange={(e) => setTempStudentSearch(e.target.value)}
                     />
                   </td>
-                  <td>
-                    {/* <FaAngleDown /> */}
-                  </td>
+
                 </tr>
               </tbody>
             </table>
@@ -87,9 +83,7 @@ function Grades() {
             <table>
               <tbody>
                 <tr>
-                  <td valign="middle">
-                    <FaFilter />
-                  </td>
+
                   <td width="100%">
                     <input
                       id="assignmentSearch"
@@ -100,13 +94,16 @@ function Grades() {
                       onChange={(e) => setTempAssignmentSearch(e.target.value)}
                     />
                   </td>
-                  <td>
-                    {/* <FaAngleDown /> */}
-                  </td>
+
                 </tr>
               </tbody>
             </table>
           </div>
+        </div>
+        <div className="filter-button-container">
+          <button className="filter-button" onClick={handleFilter}>
+            <FaFilter className="me-2"/> Apply Filters
+          </button>
         </div>
         </div>
       <div className="table-responsive">
