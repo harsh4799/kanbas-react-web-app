@@ -1,0 +1,63 @@
+.kanbas-save-profile {
+  color: white;
+  background-color: #d41a2d;
+  padding: 8px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.wd-modules,
+.wd-modules * {
+  border-radius: 5px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wd-modules {
+  margin: 10px 0;
+}
+
+.wd-modules > li {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc !important;
+  margin-bottom: 15px;
+}
+
+.wd-modules > li > div {
+  padding: 10px;
+  border-left: 1px solid #ccc !important;
+}
+
+.wd-modules > li > ul > li {
+  padding: 8px 10px;
+  border-top: 1px solid #ccc !important;
+  border-left: 2px solid green;
+}
+
+.wd-modules > li > ul > li > ul > li {
+  padding: 8px 10px;
+  padding-left: 40px;
+  border-top: 1px solid #ccc !important;
+}
+
+.module-item-link {
+  color: green;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.wd-modules > li > ul > li > ul > li a {
+  color: red;
+  text-decoration: none;
+}
+
+.wd-modules > li > ul > li > ul > li a i {
+  color: red;
+  margin-right: 10px;
+}
+
+.wd-modules > li > ul > li > ul > li a:hover {
+  text-decoration: underline;
+}
