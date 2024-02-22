@@ -5,6 +5,9 @@ import CourseNavigation from "./Navigation";
 import Assignments from "./Assignments"
 import AssignmentEditor from "./Assignments/Editor"
 import Grades from "./Grades";
+import Home from "./Home";
+import Modules from "./Modules";
+
 import '../../index.css';
 
 function Courses() {
@@ -21,12 +24,12 @@ function Courses() {
             <li className="breadcrumb-item">
               <HiMiniBars3 className="mx-3"
                 style={{
-                  color: '#b52828', fontSize: '24px'
+                  color: 'red', fontSize: '25px'
                 }}
               />
               <Link
                 to={`/Kanbas/Courses/${courseId}`}
-                style={{ color: '#b52828' }}
+                style={{ color: 'red' }}
               >
                 {course?.number} {course?.name}
               </Link>
@@ -39,17 +42,17 @@ function Courses() {
             </li>
           </ol>
         </nav>
-        <hr style={{ marginLeft: '20px', marginRight: '20px' }} />
+        <hr style={{ marginLeft: '24px', marginRight: '24px' }} />
       </div>
       <CourseNavigation />
       <div>
         <div
           className="overflow-y-scroll bottom-0 end-0"
-          style={{ left: "320px", top: "50px" }} >
+          style={{ left: "300px", top: "60px" }} >
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
-            <Route path="Home" element={<h1>Home</h1>} />
-            <Route path="Modules" element={<h1>Modules</h1>} />
+            <Route path="Home" element={<Home/>} />
+            <Route path="Modules" element={<Modules/>} />
             <Route path="Piazza" element={<h1>Piazza</h1>} />
             <Route path="Assignments" element={<Assignments/>} />
             <Route path="Assignments/:assignmentId" element={<AssignmentEditor/>} />
