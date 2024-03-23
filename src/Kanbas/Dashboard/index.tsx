@@ -56,6 +56,20 @@ function Dashboard({
                     }}
                   >
                     {course.name}{" "}
+                    <br></br>
+                    <button onClick={(event) => {
+                        event.preventDefault();
+                        setCourse(course);
+                      }}>
+                      Edit
+                    </button>
+
+                    <button onClick={(event) => {
+                        event.preventDefault();
+                        deleteCourse(course._id);
+                      }}>
+                      Delete
+                    </button>
                   </Link>
                   <p className="card-text">{course.name}</p>
                   <Link
