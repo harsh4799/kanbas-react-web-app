@@ -11,13 +11,35 @@ import { Link, useParams } from "react-router-dom";
 import { assignments } from "../../Database";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+import { useSelector, useDispatch } from "react-redux";
+import { KanbasState } from "../../store";
+import {
+  addAssignment,
+  deleteAssignment,
+  updateAssignment,
+  setAssignment,
+} from "./reducer";
 
 function Assignments() {
   const { courseId } = useParams();
-  const assignmentList = assignments.filter(
-    (assignment) => assignment.course === courseId,
-  );
 
+  const intialAssignment = {
+    title: "New Assignment",
+    course: "Assignment Course",
+    description: "New Desc",
+    points: "100",
+    dueDate: "2024-01-01",
+    availableFromDate: "2023-02-01",
+    availableUntilDate: "2023-03-01",
+  };
+
+  const assignmentList = useSelector(
+    (state: KanbasState) => state.assignmentReducer.assignments
+  );
+  const assignment = useSelector(
+    (state: KanbasState) => state.assignmentReducer.assignment
+  );
+  const dispatch = useDispatch();
   const [value, setValue] = useState("");
 
   const handleChanges = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -39,7 +61,18 @@ function Assignments() {
           <a> Group </a>
 
           <a className="red">
-            <FaPlus /> Assignment{" "}
+            <FaPlus />
+            {/* Assignment{" "} */}
+            <Link to={`/Kanbas/Courses/${courseId}/Assignments/new`}>
+              <button
+                type="submit"
+                className="btn btn-danger float-end me-1 wd-kanbas-save-profile btn-danger"
+                onClick={() => dispatch(setAssignment(intialAssignment))}
+              >
+                <i className="fa fa-plus"></i>
+                <span className="wd-left-margin-10">Assignment</span>
+              </button>
+            </Link>
           </a>
 
           <a>
@@ -65,6 +98,19 @@ function Assignments() {
           <ul className="list-group">
             {assignmentList.map((assignment) => (
               <li className="list-group-item">
+                {/* <button
+                  className="me-2"
+                  onClick={() => dispatch(setAssignment(assignment))}
+                >
+                  Edit
+                </button> */}
+
+                <button
+                  className="me-2"
+                  onClick={() => dispatch(deleteAssignment(assignment._id))}
+                >
+                  Delete
+                </button>
                 <FaEllipsisV className="me-2" />
                 <FaBook className="me-2" />
                 <Link
